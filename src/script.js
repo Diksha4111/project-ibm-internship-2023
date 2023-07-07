@@ -1,16 +1,5 @@
 $(document).ready(() => {
     
-    //navbar
-    $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if(scroll > 100){
-            $(".nav").css("background", rgb(31, 30, 30));
-        }
-        else{
-            $(".nav").css("background" , transparent);
-        }
-    })
-
 
     //carousel
     let navText = ['<i class="fa-solid fa-arrow-left"></i>' , '<i class="fa-solid fa-arrow-right"></i>']
@@ -30,6 +19,7 @@ $(document).ready(() => {
         dots:false,
         loop: true,
         autoplay: false,
+        margin: 5,
         autoplayHoverPause: true,
         responsive: {
             1320:{
@@ -55,6 +45,146 @@ $(document).ready(() => {
             },
             743:{
                 items: 3
+            }
+        }
+    })
+
+    $('.movies-slide').owlCarousel({
+        items:2,
+        dots:true,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        margin: 15,
+        responsive: {
+            1320:{
+                items: 4
+            },
+            1144:{
+                items: 4
+            },
+            1074:{
+                items: 4
+            },
+            1000:{
+                items: 3
+            },
+            920:{
+                items: 3 
+            },
+            887 : {
+                items: 3
+            },
+            886:{
+                items: 3
+            },
+            743:{
+                items: 2
+            }
+        }
+    })
+    
+    $('.continue-watching-slide').owlCarousel({
+        items:2,
+        dots:false,
+        loop: true,
+        autoplay: false,
+        autoplayHoverPause: true,
+        margin: 150,
+        responsive: {
+            1320:{
+                items: 5
+            },
+            1144:{
+                items: 4
+            },
+            1074:{
+                items: 4
+            },
+            1000:{
+                items: 3
+            },
+            920:{
+                items: 3 
+            },
+            887 : {
+                items: 3
+            },
+            886:{
+                items: 3
+            },
+            743:{
+                items: 2
+            }
+        }
+    })
+
+    $('.most-popular-slide').owlCarousel({
+        items:2,
+        dots:false,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        margin: 150,
+        responsive: {
+            1320:{
+                items: 5
+            },
+            1144:{
+                items: 4
+            },
+            1074:{
+                items: 4
+            },
+            1000:{
+                items: 3
+            },
+            920:{
+                items: 3 
+            },
+            887 : {
+                items: 3
+            },
+            886:{
+                items: 3
+            },
+            743:{
+                items: 2
+            }
+        }
+    })
+
+    $('.language-slide').owlCarousel({
+        items:2,
+        dots:false,
+        loop: true,
+        autoplay: false,
+        autoplayHoverPause: true,
+        margin: 15,
+        responsive: {
+            1320:{
+                items: 5
+            },
+            1144:{
+                items: 5
+            },
+            1074:{
+                items: 4
+            },
+            1000:{
+                items: 4
+            },
+            920:{
+                items: 3 
+            },
+            887 : {
+                items: 3
+            },
+            886:{
+                items: 3
+            },
+            743:{
+                items: 2
             }
         }
     })
